@@ -21,6 +21,7 @@
   <link rel="stylesheet" type="text/css" href="./files/common.css">
   <link rel="stylesheet" type="text/css" href="./files/layout.css">
   <link rel="stylesheet" type="text/css" href="./files/sub.css">
+  <link rel="stylesheet" type="text/css" href="https://ssl.pstatic.net/static.news/pnews/resources/20181122_142240/css/news.css" />
   <!-- -->
 
   <div id="wrapper">
@@ -50,7 +51,7 @@
               <!-- -->
             </div>
             <div class="txt-con" id="txt-con">
-              <iframe name="iframe_content" id="if_content" src="./files/7186.html" width="750" height="1300" frameborder="0" scrolling="no" onload="resizing(this);setInterval(storify,2000);fontSize();"></iframe>
+              <iframe name="iframe_content" id="if_content" src="./files/7186.html" width="750" height="1200" frameborder="0" scrolling="no" onload="resizing(this);setInterval(storify,2000);fontSize();"></iframe>
               <script type="text/javascript">
                 function storify() {
                   resizing(document.getElementById('if_content'));
@@ -71,124 +72,50 @@
                     ifheight = obj.height;
                   }
                 }
-
-                function fontSize() {
-                  obj = document.getElementById('if_content');
-                  var defFontSize = 17;
-                  if (getCookie('ziksirFont')) {
-                    obj.contentWindow.document.body.style.fontSize = parseInt(getCookie('ziksirFont')) + 'px';
-                    defFontSize = parseInt(getCookie('ziksirFont'));
-                  }
-                  $('#fontUp').click(function() {
-                    obj.contentWindow.document.body.style.fontSize = parseInt(defFontSize + 1) + 'px';
-                    defFontSize++;
-                    setCookie('ziksirFont', defFontSize, 10000);
-                  });
-                  $('#fontDown').click(function() {
-                    obj.contentWindow.document.body.style.fontSize = parseInt(defFontSize - 1) + 'px';
-                    defFontSize--;
-                    setCookie('ziksirFont', defFontSize, 10000);
-                  });
-
-                  return false;
-                }
               </script>
             </div>
 
             <!-- -->
 
-            <div class="txt-con-b">
-              <!-- -->
-            </div>
           </div>
           <div class="group-related">
             <!-- 관련기사 -->
 
             <!-- 추천기사 -->
-            <div class="article-related" id="related2">
+            <div class="article-related" id="related2" style="border: white;">
               <div class="related-slide clearfix">
                 <p class="tit"><img src="./files/tit_recomm_article.gif" alt="추천기사"></p>
-                <p class="btns next"><a onclick="nextRelated(&#39;related2&#39;); return false;">btn</a></p>
-                <div class="viewport">
-                  <ul class="overview clearfix">
-                    <li itemindex="1">
-                      <a>
-                        <div class="thumb-area">
-                          <span><img src="./files/6235.jpg" alt="이미지" width="216" height="151"></span>
-                          <div class="tit">
-                            <strong>성범죄자 비밀 카페에서 벌어지는 일들</strong>
-                          </div>
-                        </div>
-                      </a>
+                <br>
+                <div class="section_body" id="section_body" style="margin-left: 20px; margin-right: 20px;">
+                  <ul class="type06">
+                    <li>
+                      <dl><dt class="photo"><img src="./files/recom-1.jpg" width="106" height="72" alt="" style="border: 1px solid lightgray;"></dt>
+                        <dt>해사 여생도 숙소에 1년간 몰카…확인된 피해자만 7명</dt>
+                        <span class="lede">해군사관학교 남성 생도가 여생도 숙소 화장실에 스마트폰을 넣어놓고, 불법 촬영을 해오다 적발됐습니다. 학교측이 오늘 이 학생 처벌을 ...</span>
+                        <span class="writing">JTBC</span>
+                      </dl>
                     </li>
-                    <li itemindex="2">
-                      <a>
-                        <div class="thumb-area">
-                          <span><img src="./files/6841.jpg" alt="이미지" width="216" height="151"></span>
-                          <div class="tit">
-                            <strong>남편·애인에 살해당한 여성들...지난해 85명</strong>
-                          </div>
-                        </div>
-                      </a>
+                    <li>
+                      <dl><dt class="photo"><img src="./files/recom-2.jpg" width="106" height="72" alt="" style="border: 1px solid lightgray;"></dt>
+                        <dt>‘조두순 출소 반대’ 국민청원, 또 20만명 동의 넘어</dt>
+                        <span class="lede">지난 2008년 당시 8살 여자아이를 상대로 성폭력을 자행해 수감 중인 조두순의 출소를 반대한다는 국민청원이 또 다시 20만명 이상의 동의를 받아 ...</span>
+                        <span class="writing">서울신문</span>
+                      </dl>
                     </li>
-                    <li itemindex="0">
-                      <a>
-                        <div class="thumb-area">
-                          <span><img src="./files/6772.jpg" alt="이미지" width="216" height="151"></span>
-                          <div class="tit">
-                            <strong>숨은 몰래 카메라 찾기</strong>
-                          </div>
-                        </div>
-                      </a>
+                    <li>
+                      <dl><dt class="photo"><img src="./files/recom-3.jpg" width="106" height="72" alt="" style="border: 1px solid lightgray;"></dt>
+                        <dt>남편·애인에 살해당한 여성들…지난해 85명</dt>
+                        <span class="lede">남편이나 애인에게 살해된 여성이 지난 한 해 최소 85명에 달하는 것으로 한 여성단체 조사에서 나타났습니다. 정부가 그 심각성을 인식하고 여성대상 ...</span>
+                        <span class="writing">JTBC</span>
+                      </dl>
                     </li>
                   </ul>
                 </div>
               </div>
+              <br><br>
             </div>
-            <div class="related2_item" style="display:none;">
-              <li itemindex="0">
-                <a>
-                  <div class="thumb-area">
-                    <span><img src="./files/6772.jpg" alt="이미지" width="216" height="151"></span>
-                    <div class="tit">
-                      <strong>숨은 몰래 카메라 찾기</strong>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li itemindex="1">
-                <a>
-                  <div class="thumb-area">
-                    <span><img src="./files/6235.jpg" alt="이미지" width="216" height="151"></span>
-                    <div class="tit">
-                      <strong>성범죄자 비밀 카페에서 벌어지는 일들</strong>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li itemindex="2">
-                <a>
-                  <div class="thumb-area">
-                    <span><img src="./files/6841.jpg" alt="이미지" width="216" height="151"></span>
-                    <div class="tit">
-                      <strong>남편·애인에 살해당한 여성들...지난해 85명</strong>
-                    </div>
-                  </div>
-                </a>
-              </li>
-            </div>
-          </div>
-          <div>
           </div>
 
-          <!-- -->
-          <div id="comment_list">
-            <div id="reply">
-              <!-- -->
-              <div class="paging" style="font-family: Tahoma">
-              </div>
-            </div>
-          </div>
         </div><!-- .page-cont -->
         <!-- .page-side -->
         <div id="page-side-m" class="page-side">
